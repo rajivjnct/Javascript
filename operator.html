@@ -1,0 +1,42 @@
+<!Doctype html>
+<html>
+
+<head>
+  <title>Operator</title>
+</head>
+
+<body>
+  <h1>Javascript Operators</h1>
+  <div id="output"></div>
+  <script>
+    //Airthmetic Operator
+    var operand1 = 247;
+    var operand2 = 53;
+    var operand3 = "247";
+
+    var result = '';
+
+    result += `<h2>Airthemetic Operator</h2><br><b>Addition of Two Numbers</b><br/><br/> Operand1 = 247 <br/> Operand2 = 53 <hr/>Total :------ ${operand1 + operand2}`;
+    result += `<br/><br/><b>Substraction of Two Numbers</b><br/><br/> Operand1 = 247 <br/> Operand2 = 53 <hr/>Total :------  ${operand1 - operand2}`;
+    result += `<br/><br/><b>Multliplication of Two Numbers</b><br/><br/> Operand1 = 247 <br/> Operand2 = 53 <hr/>Total :------  ${operand1 * operand2}`;
+    result += `<br/><br/><b>Division of Two Numbers</b><br/><br/> Operand1 = 247 <br/> Operand2 = 53 <hr/>Total :------  ${operand1 / operand2}`;
+    result += `<br/><br/><b>Remainder of Two Numbers</b><br/><br/> Operand1 = 247 <br/> Operand2 = 53 <hr/>Total :------  ${operand1 % operand2}`;
+    result += `<br/><br/><b>Remainder of Two Numbers</b><br/><br/> Operand1 = 247 <br/> Operand2 = 53 <hr/>Total :------  ${operand1 % operand2}`;
+
+    //Comparision Operator
+    result += `<br/><h2>Comparison Operator</h2>`;
+    result += `<h4>Note: ** == is checking only value and === check the value as well as type.</h4><br/>`;
+    result += `<b>++ Operator</b><br>Before Increment Numner is : ${operand1}<br>After Pre-Increment : ${++operand1}`;
+    result += `<br/><b>Operator++ </b><br>Before Increment Numner is : ${operand1}<br>After Post-Increment : ${++operand1}`;
+    result += `<br/><br/><b>== Operator</b><br/><br/> Operand1 = 247 == Operand2 = 53 <hr/>Total :------  ${operand1 == operand2}`;
+    result += `<br/><br/><b> '<' Operator</b><br/><br/> Operand1 = 247 < Operand2 = 53 <hr/>Total :------  ${operand1 < operand2}`;
+    result += `<br/><br/><b> '>' Operator</b><br/><br/> Operand1 = 247 > Operand2 = 53 <hr/>Total :------  ${operand1 > operand2}`;
+    result += `<br/><br/><b> '>=' Operator</b><br/><br/> Operand1 = 247 >= Operand2 = 53 <hr/>Total :------  ${operand1 >= operand2}`;
+    result += `<br/><br/><b> '<=' Operator</b><br/><br/> Operand1 = 247 <= Operand2 = 53 <hr/>Total :------  ${operand1 <= operand2}`;
+    result += `<br/><br/><b> '===' Operator</b><br/><br/> Operand1 = 247 === Operand3 = "247" <hr/>Total :------  ${operand1 === operand2}`;
+
+    document.getElementById('output').innerHTML = result;
+  </script>
+</body>
+
+</html>

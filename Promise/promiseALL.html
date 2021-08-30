@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Promise All</title>
+</head>
+<h1>This is Promise ALL</h1>
+<script>
+    let data = Promise.race([
+        new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve("2 Second")
+            }, 2000);
+        }),
+        new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve("3 Second")
+            }, 3000);
+        }),
+        new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve("4 Second")
+            }, 4000);
+        })
+    ])
+
+    data.then((items) => {
+        console.log("Then Block" + items);
+    }).catch((err) => {
+        console.log("Error Catch Block" + err);
+    })
+</script>
+
+</html>

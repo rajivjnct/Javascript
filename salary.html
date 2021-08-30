@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Salary</title>
+</head>
+
+<body>
+  <div id="output"></div>
+  <script>
+    var monthlySalary = 102450;
+
+    var salary = '';
+
+    salary += `Monthly Salary : ${monthlySalary}`;
+    var weeklySalary = monthlySalary / 4;
+    salary += `<br/>Weekly Salary : ${weeklySalary}`;
+    var yearlySalary = monthlySalary * 12;
+    salary += `<br/>Yearly Salary : ${yearlySalary}`;
+    document.getElementById('output').innerHTML = salary;
+  </script>
+</body>
+
+</html>
