@@ -1,0 +1,28 @@
+<script>
+    //Apply is same as call but apply takes array as an argument
+    //When we want to call method which is defined in one function and need to call in different function.
+    const Person = {
+        name: 'Rajiv',
+        location: 'Kolkata',
+        profession: function () {
+            console.log(`My name is ${this.name} and i am working from ${this.location}`);
+        }
+    }
+
+    //Now i need to call profession method in the below function
+    const Person2 = {
+        name: 'Kumar',
+        location: 'Ranchi'
+    }
+    const Person3 = {
+        name: 'Kumar1',
+        location: 'Ranchi1'
+    }
+
+    // Person.profession();
+
+    Person.profession.apply(Person2);
+    Person.profession.apply(Person3);
+
+
+</script>

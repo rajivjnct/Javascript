@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Promise</title>
+</head>
+
+<body>
+    <h1>This is the Promise Example.</h1>
+    <script>
+        let data = new Promise((resolve, reject) => {
+            resolve('Submitted');
+        })
+        data.then((item) => {
+            console.log(item)
+        }).catch((err) => {
+            console.log(err);
+        })
+    </script>
+</body>
+
+</html>

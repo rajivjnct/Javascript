@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Switch</title>
+</head>
+
+<body>
+  <div id="output"></div>
+  <input type="text" id="inputGrade" placeholder="Please Enter the Grade to Show Meaage" />
+  <button onclick="showGrade()">Show Grade Message</button>
+
+  <script>
+    function showGrade() {
+      var getInputValue = document.getElementById('inputGrade').value;
+      var grade = getInputValue;
+      switch (grade) {
+        case "A":
+          document.getElementById('output').innerHTML = 'Great Job!!!';
+          break;
+
+        case "B":
+          document.getElementById('output').innerHTML = "Very Good!!";
+          break;
+
+        case "C":
+          document.getElementById('output').innerHTML = "You have Pass!!";
+          break;
+
+        case "D":
+          document.getElementById('output').innerHTML = "Fail ! Better Luck Next Time.";
+          break;
+
+        default:
+          document.getElementById('output').innerHTML = "Unrecognized Grade";
+
+      }
+    }
+  </script>
+</body>
+
+</html>

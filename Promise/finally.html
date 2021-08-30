@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Finally </title>
+</head>
+
+<body>
+    <h1>Finally Example</h1>
+    <!--<script>
+        /*let data = new Promise((resolve, reject) => {
+            reject("Issue");
+        })
+
+        data.finally((items) => {
+            console.log("Finally Block" + items);
+        })
+        data.then((items) => {
+            console.log("Then" + items);
+        }).catch((err) => {
+            console.log("Catch Block" + items);
+        })*/
+    </script>-->
+    <script>
+        let data = new Promise((resolve, reject) => {
+            //reject(new Error('Data Issue'))
+            throw new Error('Data Issue');
+        })
+        data.then((items) => {
+            console.log(items);
+        }).catch((err) => {
+            console.log(err);
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+<script>
+    //Bind method is same like call and apply but it's execution time is future. 
+    const Person = {
+        name: "Rajiv",
+        location: "Kolkata",
+        profession: function () {
+            console.log(`My name is ${this.name} and i am working from ${this.location}`)
+        }
+    }
+
+    const Person1 = {
+        name: 'Kumar',
+        location: 'Ranchi'
+    }
+
+    let bindPerson = Person.profession.bind(Person1);
+    bindPerson();
+</script>
